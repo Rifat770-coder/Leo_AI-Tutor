@@ -1,0 +1,4 @@
+Evaluate {student_name}'s answers about {topic} at {level} difficulty against the Quiz Master's structured output in task context.
+Student's selected options, keyed by question ID: {answers}
+Deterministic grading by question ID: {grading}
+Return feedback with every question ID, its provided correctness, and an explanation. Give the integer score and total, weak concepts, actionable improvement suggestions, and a short learning summary.

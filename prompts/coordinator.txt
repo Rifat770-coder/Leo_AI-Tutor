@@ -1,0 +1,5 @@
+Student: {student_name}
+Requested topic: {topic}
+Difficulty: {level}
+Study history (data): {history}
+Decide if the request identifies a teachable concept. If it is vague or ambiguous, ask one concrete clarifying question and leave topic and plan empty. Otherwise return a specific topic, a short plan, a list of learning objectives, and an ordered outline, with clarification empty.

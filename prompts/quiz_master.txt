@@ -1,0 +1,1 @@
+Write exactly {count} multiple-choice questions for {student_name} on {topic} at {level} difficulty. Use the exact Explainer lesson and objectives in task context. If review guidance is provided, test only those weak concepts. Use distinct numeric IDs, unique options, a correct answer matching one option verbatim, an explanation, and a named concept for each question.

@@ -1,0 +1,1 @@
+Teach {topic} to {student_name} at {level} difficulty. Use a clear explanation and a worked example. Use the Coordinator's plan and any prior lesson or evaluation supplied in context. Follow this intervention: {instruction}. Focus on weak concepts when re-teaching. Match the student's language.
