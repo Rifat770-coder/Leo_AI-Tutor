@@ -92,15 +92,15 @@ button[data-testid^="stBaseButton"]:focus-visible, input:focus-visible, label:ha
   display:grid; flex:none; place-items:center; width:2.9rem; height:2.9rem; border-radius:.9rem;
   background:#293d20; color:var(--leo-lime); font-size:1.5rem; font-weight:800;
 }
-.st-key-sidebar_session { box-sizing:border-box; flex-shrink:0; min-width:0;
-  background:#1a2b1b; border:1px solid #3a5036;
-  border-radius:.75rem; padding:.6rem .65rem; }
+.st-key-sidebar_session { flex-shrink:0; min-width:0; }
 .st-key-sidebar_session [data-testid="stVerticalBlock"], .st-key-sidebar_session[data-testid="stVerticalBlock"] {
   gap:.4rem;
 }
 .leo-sidebar-summary {
-  display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.16rem .35rem;
-  align-items:center;
+  box-sizing:border-box; width:100%; padding:.6rem .65rem;
+  background:#1a2b1b; border:1px solid #3a5036; border-radius:.75rem;
+  display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.25rem .35rem;
+  align-items:center; line-height:1.35;
 }
 .leo-sidebar-summary small {
   grid-area:1 / 1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
@@ -138,7 +138,7 @@ button[data-testid^="stBaseButton"]:focus-visible, input:focus-visible, label:ha
   .st-key-navigation [data-testid="stRadioOption"] { min-height:2rem; }
   .leo-sidebar-profile small { display:none; }
   .st-key-sidebar_brand img { max-height:2.4rem; }
-  .st-key-sidebar_session { padding:.18rem .45rem; }
+  .leo-sidebar-summary { padding:.35rem .45rem; }
   .st-key-sidebar_profile { padding-top:.18rem; }
 }
 @media (max-height:360px) {

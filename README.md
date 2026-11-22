@@ -4,8 +4,12 @@ Leo AI Tutor is a Streamlit workspace for AI-assisted study. Sign in, choose a t
 
 ## Live app and demo
 
-- [Open Leo AI Tutor](https://leo-ai-tutor-s85k.onrender.com/)
+- [Open Leo AI Tutor](https://leo-ai-tutor-s85k.onrender.com/) — Hosted on Render’s free tier, so the first load after a period of inactivity may take a little longer.
 - [Watch the demo video](https://drive.google.com/file/d/1lF3i-wMBkszHRwnEaLzECaixSHFqQT53/view?usp=sharing)
+
+## Dashboard
+
+![Leo AI Tutor dashboard showing the sidebar, learning activity, and quiz progress](Docs/Dashboard.png)
 
 ## Run locally
 
