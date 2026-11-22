@@ -2,6 +2,11 @@
 
 Leo AI Tutor is a Streamlit workspace for AI-assisted study. Sign in, choose a topic and difficulty, work through a lesson, take a quiz, and review feedback with a four-agent CrewAI team. The app supports English and Bangla lessons, follow-up questions, simpler or more detailed explanations, and targeted review.
 
+## Live app and demo
+
+- [Open Leo AI Tutor](https://leo-ai-tutor-s85k.onrender.com/)
+- [Watch the demo video](https://drive.google.com/file/d/1lF3i-wMBkszHRwnEaLzECaixSHFqQT53/view?usp=sharing)
+
 ## Run locally
 
 On Windows, double-click `start.bat` in the repository folder. It uses Python 3.12 or `uv` to set up the project if needed and opens Leo AI Tutor in your default browser. Keep the launcher window open while you use the app. Press Ctrl+C in that window to stop the server.
