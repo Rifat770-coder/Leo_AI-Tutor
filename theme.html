@@ -92,8 +92,12 @@ button[data-testid^="stBaseButton"]:focus-visible, input:focus-visible, label:ha
   display:grid; flex:none; place-items:center; width:2.9rem; height:2.9rem; border-radius:.9rem;
   background:#293d20; color:var(--leo-lime); font-size:1.5rem; font-weight:800;
 }
-.st-key-sidebar_session { min-width:0; background:#1a2b1b; border:1px solid #3a5036;
-  border-radius:.75rem; padding:.5rem .55rem; }
+.st-key-sidebar_session { box-sizing:border-box; flex-shrink:0; min-width:0;
+  background:#1a2b1b; border:1px solid #3a5036;
+  border-radius:.75rem; padding:.6rem .65rem; }
+.st-key-sidebar_session [data-testid="stVerticalBlock"], .st-key-sidebar_session[data-testid="stVerticalBlock"] {
+  gap:.4rem;
+}
 .leo-sidebar-summary {
   display:grid; grid-template-columns:minmax(0,1fr) auto; gap:.16rem .35rem;
   align-items:center;
@@ -101,15 +105,17 @@ button[data-testid^="stBaseButton"]:focus-visible, input:focus-visible, label:ha
 .leo-sidebar-summary small {
   grid-area:1 / 1; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
 }
-.leo-sidebar-summary strong { grid-area:2 / 1 / 3 / -1; }
+.leo-sidebar-summary strong {
+  grid-area:2 / 1 / 3 / -1; min-width:0; font-size:.9rem;
+  line-height:1.35; white-space:normal; overflow-wrap:anywhere;
+}
 .leo-sidebar-summary small, .leo-sidebar-profile small { display:block; color:var(--leo-muted); font-size:.75rem; }
 .leo-session-status { grid-area:1 / 2; color:#bce69e; font-size:.67rem; white-space:nowrap; }
 .leo-session-status::before { content:""; display:inline-block; width:.36rem; height:.36rem; margin-right:.35rem;
   border-radius:50%; background:var(--leo-lime); vertical-align:.08rem; }
-.leo-sidebar-summary strong, .leo-sidebar-profile strong {
+.leo-sidebar-profile strong {
   display:block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:.9rem; }
-.st-key-sidebar_profile [data-testid="stVerticalBlock"], .st-key-sidebar_profile[data-testid="stVerticalBlock"],
-.st-key-sidebar_session [data-testid="stVerticalBlock"]:has(button), .st-key-sidebar_session[data-testid="stVerticalBlock"]:has(button) {
+.st-key-sidebar_profile [data-testid="stVerticalBlock"], .st-key-sidebar_profile[data-testid="stVerticalBlock"] {
   display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:.55rem; }
 .st-key-sidebar_profile { border-top:1px solid var(--leo-border); padding-top:.45rem; }
 .leo-sidebar-profile { display:flex; align-items:center; gap:.55rem; min-width:0; }
