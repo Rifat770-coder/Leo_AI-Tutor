@@ -4,7 +4,13 @@ Leo AI Tutor is a Streamlit workspace for AI-assisted study. Sign in, choose a t
 
 ## Run locally
 
-Use Python 3.12. Open a PowerShell terminal in the repository directory.
+On Windows, double-click `start.bat` in the repository folder. It uses Python 3.12 or `uv` to set up the project if needed and opens Leo AI Tutor in your default browser. Keep the launcher window open while you use the app. Press Ctrl+C in that window to stop the server.
+
+The launcher creates `.env` from `.env.example` on the first run if the file is missing. Set your provider credentials in `.env` before starting a lesson.
+
+### Manual setup
+
+Use Python 3.12 and open a PowerShell terminal in the repository directory.
 
 ```powershell
 python -m venv .venv
